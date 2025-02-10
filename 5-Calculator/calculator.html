@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+
+    <body>
+        <!-- HTML code block -->
+        <h1>Simple Calculator</h1>
+
+        <section id="buttons-btn">
+            <p>
+                <button onclick="
+                    theCalculation +='1';
+                    console.log(theCalculation);">1
+                </button>
+
+                <button onclick="
+                    theCalculation +='2';
+                    console.log(theCalculation);">2
+                </button>
+
+                <button onclick="
+                    theCalculation +='3';
+                    console.log(theCalculation);">3
+                </button>
+
+                <button onclick="
+                    theCalculation +=' + ';
+                    console.log(theCalculation);">+
+                </button>
+            </p>
+
+            <p>               
+                <button onclick="
+                    theCalculation +='4';
+                    console.log(theCalculation);">4
+                </button>
+
+                <button onclick="
+                    theCalculation +='5';
+                    console.log(theCalculation);">5
+                </button>
+
+                <button onclick="
+                    theCalculation +='6';
+                    console.log(theCalculation);">6
+                </button>
+
+                <button onclick="
+                    theCalculation +=' - ';
+                    console.log(theCalculation);">-
+                </button>
+            </p>
+
+            <p>
+                <button onclick="
+                    theCalculation +='7';
+                    console.log(theCalculation);">7
+                </button>
+
+                <button onclick="
+                    theCalculation +='8';
+                    console.log(theCalculation);">8
+                </button>
+
+                <button onclick="
+                    theCalculation +='9';
+                    console.log(theCalculation);">9
+                </button>
+
+                <button onclick="
+                    theCalculation +=' * ';
+                    console.log(theCalculation);">*
+                </button>
+            </p>
+
+            <p>
+                <button onclick="
+                    theCalculation +='0';
+                    console.log(theCalculation);">0
+                </button>
+
+                <button onclick="
+                    theCalculation +='.';
+                    console.log(theCalculation);">.
+                </button>
+
+                <button onclick="
+                    theCalculation= eval(theCalculation);
+                    console.log(theCalculation);">=
+                </button>
+                    
+                <button onclick="
+                    theCalculation +=' / ';
+                    console.log(theCalculation);">/
+                </button>
+            </p>
+
+            <p>
+                <button onclick="
+                    theCalculation = '';
+                    console.log('Cleared.');">
+                    Clear
+                </button>
+            </p>            
+        </section>
+
+        <script>
+            // JS code block;
+            let theCalculation = "";
+        </script>
+    </body>
+</html>
