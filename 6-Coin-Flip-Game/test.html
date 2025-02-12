@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip Game</title>
+</head>
+
+<body>
+    <!-- HTML Code Block -->
+    <h1>Coin Flip Game</h1>
+
+    <section id="button">
+        <button onclick="
+            // Generate a random number with Math.random and save it in a variable.
+            const randomNumber = Math.random();
+            let theResult;
+            let myGuess = 'heads';
+
+            // Check if number can be displayed as heads or tails in the console using If-Statements;       
+
+            theResult = randomNumber >= 0.5? 'heads': 'tails';
+
+            // Compare the generated result with the user's guess and determine the outcome
+            theResult === myGuess? console.log('You Win!'): console.log('You Lose!'); 
+            
+            // Display on pop-up;
+            alert(`You picked ${myGuess}.The coin landed on ${theResult}`);">
+            Head</button>
+        
+        <button onclick="
+            // Generate a random number with Math.random and save it in a variable.
+            const randomNumber = Math.random();
+            let theResult;
+            let myGuess = 'tails';
+
+            // Check if number can be displayed as heads or tails in the console using If-Statements;  
+            theResult = randomNumber >= 0.5? 'heads': 'tails';
+
+            // Compare the generated result with the user's guess and determine the outcome
+            theResult === myGuess? console.log('You Win!'): console.log('You Lose!');
+            
+            // Display on pop-up;
+            alert(`You picked ${myGuess}.The coin landed on ${theResult}`);">
+            Tails</button>
+
+        <button onclick="
+            // Resets Values/ Scores to 0;
+            const randomNumber = 0;
+            let theResult;
+            let myGuess;
+
+            console.log('Game has been reset!');
+
+            // Display on pop-up;
+            alert('Game Reset!');">
+            Reset</button>
+    </section>
+    
+    <script>
+        // JavaScript code goes here;
+    </script>
+</body>
+</html>

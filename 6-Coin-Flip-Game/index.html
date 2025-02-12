@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Flip Game</title>
+</head>
+
+<body>
+    <!-- HTML Code Block -->
+    
+    <script>
+        // Generate a random number with Math.random and save it in a variable.
+        const randomNumber = Math.random();
+        let theResult = '';
+        let myGuess = 'heads';
+
+        // Check if number can be displayed as heads or tails in the console using If-Statements;
+        if (randomNumber >= 0.5) {
+            theResult = 'heads';
+        } else {
+            theResult = 'tails';
+        };
+
+        // Compare the generated result with the user's guess and determine the outcome
+        if (theResult === myGuess) {
+            console.log('You Win!');
+        } else {
+            console.log('You Lose!');
+        };        
+    </script>
+</body>
+</html>
